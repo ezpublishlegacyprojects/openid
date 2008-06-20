@@ -1,0 +1,26 @@
+Login
++ Good openid URL login
+    + Approve OpenID auth
+    + Cancel OpenID auth
++ Bad OpenID url
++ Non registered OpenID URL
+
+Register
++ Good OpenID URL
+    + Approve OpenID auth
+    + Cancel OpenID auth (Requires work)
++ Existing registered OpenID URL
++ Bad OpenID URL (Requires Work)
+
+Management
++ Register new OpenID URL
+  + Good OpenID URL
+    + Approve OpenID auth
+    + Cancel OpenID auth
+  + Bad OpenID URL
+  + Existing OpenID URL
++ Remove
+  + single OpenID URL
+  + multiple OpenID URLs
+  + all OpenID URLs
+  + no OpenID URLs

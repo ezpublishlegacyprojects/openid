@@ -1,0 +1,11 @@
+Short Term
++ Create a eZ Publish session based consumer store
++ Use OpenID error messages instead of default login ones
++ Internationalise
++ Investigate using Attribute Exchange (AX) over Simple Registration (SREG) as
+SREG has a limited supported attribute list
+
+Medium Term
++ Investigate adding i-name support
++ OpenID "anonymous" Comments
+

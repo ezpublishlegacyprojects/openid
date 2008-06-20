@@ -1,0 +1,20 @@
+input#openid_url {
+  background: #FFFFFF url('/ezpublish-4.0.0/extension/openid/design/standard/images/openid-icon-small.gif') no-repeat scroll 0pt 50%;
+  padding-left: 18px;
+  padding-bottom: 3px;
+  display: block;
+}
+
+/* Admin specific styles */
+
+div.openid-admin, div.openid-ezwebin {
+  float:right;
+  margin-top: 80px;
+  margin-right:20px;
+  width: 250px;
+}
+
+div.openid div.block {
+  clear: none;
+}
+*/
