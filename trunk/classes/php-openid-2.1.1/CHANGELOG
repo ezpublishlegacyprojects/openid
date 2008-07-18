@@ -1,0 +1,68 @@
+Fri Jun 27 15:43:17 PDT 2008  Kevin Turner <kevin@janrain.com>
+  tagged 2.1.1
+
+Fri Jun 27 15:42:22 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * Update version to 2.1.1
+
+Wed Jun 25 14:48:06 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * Make the detect script work with 206 responses from the fetcher
+
+Wed Jun 25 13:26:47 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * Added a script that helps to update the valid TLD list for trust root matching
+
+Wed Jun 25 13:24:19 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * Updated TLD list in TrustRoot.php
+
+Wed Jun 25 11:53:31 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * remove Auth_OpenID::quoteMInimal.  Resolves #262.
+
+Sun Jun 22 07:15:37 PDT 2008  dAniel hAhler <php-openid@thequod.de>
+  * ParanoidHTTPFetcher-strpos-instead-of-preg_match-and-code-improvements
+  
+  ParanoidHTTPFetcher:
+   - Fix corner case in get() and post() for headers without any value
+      (e.g. 'Expires:')
+   - Use strpos() instead of preg_match() when looking for ":" (and
+     look for ": " now instead)
+  
+
+Mon Jun 23 16:15:33 PDT 2008  will@willnorris.com
+  * fix accept header
+
+Fri Jun 20 15:56:09 PDT 2008  http://j3h.us/
+  * Do not attempt HMAC-SHA256 tests if HMAC-SHA256 is not supported
+
+Fri Jun 20 15:46:49 PDT 2008  http://j3h.us/
+  * Fix Consumer's OpenID 1 checkid_immediate failure handling (thanks to Evan Prodromou)
+
+Fri Jun 20 15:40:43 PDT 2008  http://j3h.us/
+  * Test and fix HMAC-SHA256
+
+Fri Jun 20 15:08:10 PDT 2008  http://j3h.us/
+  * Rename files and tests related to HMACSHA1 and HMACSHA256
+
+Fri Jun 13 11:14:46 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * etxrd.getCanonicalID: case-insensitive comparsions, patch from =wil
+  
+  1. There should only be a single CanonicalID in each XRD (in the latest XRI
+  resolution spec), so I made it use the first CID found instead of the last.
+  
+  2. Use case-insensitive comparison when comparing CanonicalIDs.
+
+Wed Jun 11 15:22:16 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * Accept response code 206 from fetcher results (part 2).  Fixes #260
+
+Wed Jun 11 15:18:05 PDT 2008  Kevin Turner <kevin@janrain.com>
+  * Accept response code 206 from fetcher results.  Fixes #260
+
+Wed Jun 11 11:21:27 PDT 2008  cygnus@janrain.com
+  * Add test cases for trust roots with non-ASCII characters in path or hostname
+
+Wed Jun 11 11:20:36 PDT 2008  cygnus@janrain.com
+  * Auth_OpenID_urinorm: fail to parse URIs with non-ASCII characters
+
+Fri Jun  6 16:03:45 PDT 2008  cygnus@janrain.com
+  * examples/discover: import consumer/common.php to set include_path
+
+Fri Jun  6 15:49:51 PDT 2008  cygnus@janrain.com
+  tagged 2.1.0
