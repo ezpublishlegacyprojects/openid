@@ -30,7 +30,7 @@ class OpenIDInfo
             'Copyright' => "Copyright (C) 2008 Bruce Morrison",
             'License' => "GNU General Public License v2.0",
             'Includes the following third-party software' => array( 'Name' => 'OpenID for PHP',
-                                                                    'Version' => '2.0.0',
+                                                                    'Version' => '2.1.1',
                                                                     'License' => "Apache Software License",
                                                                     'For more information' => 'http://www.openidenabled.com/php-openid/' )
         );
